@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hesap Makinesi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="heading-wrapper">
+    <h1>Hesap Makinesi</h1>
+</div>
+<div class="calculator">
+  <div class="display">
+    <div class="gray-btn-wrapper">
+      <input type="text" id="input" class="number-input" readonly>
+    </div>
+    <div class="gray-btn-wrapper">
+      <button class="clear gray-btn" onclick="clearInput()">C</button>
+    </div>
+  </div>
+  <div class="buttons">
+    <div class="gray-btn-wrapper">
+      <button class="gray-btn" onclick="appendToInput('1')">1</button>
+    </div>
+    <div class="gray-btn-wrapper">
+      <button class="gray-btn" onclick="appendToInput('2')">2</button>
+    </div>
+    <div class="gray-btn-wrapper">
+      <button class="gray-btn" onclick="appendToInput('3')">3</button>
+    </div>
+    <div class="gray-btn-wrapper">
+      <button class="gray-btn" onclick="appendToInput('/')">/</button>
+    </div>
+
+    <div class="gray-btn-wrapper">
+      <button class="gray-btn" onclick="appendToInput('4')">4</button>
+    </div>
+    <div class="gray-btn-wrapper">
+      <button class="gray-btn" onclick="appendToInput('5')">5</button>
+    </div>
+    <div class="gray-btn-wrapper">      
+      <button class="gray-btn" onclick="appendToInput('6')">6</button>
+    </div>
+    <div class="gray-btn-wrapper">
+      <button class="gray-btn" onclick="appendToInput('-')">-</button>
+    </div>
+
+    <div class="gray-btn-wrapper">
+      <button class="gray-btn" onclick="appendToInput('7')">7</button>
+    </div>
+    <div class="gray-btn-wrapper">
+      <button class="gray-btn" onclick="appendToInput('8')">8</button>
+    </div>
+    <div class="gray-btn-wrapper">
+      <button class="gray-btn" onclick="appendToInput('9')">9</button>
+    </div>
+    <div class="gray-btn-wrapper">
+      <button class="gray-btn" onclick="appendToInput('+')">+</button>
+    </div>
+
+    <div class="gray-btn-wrapper">
+      <button class="gray-btn" onclick="appendToInput('.')">.</button>
+    </div>
+    <div class="gray-btn-wrapper">
+      <button class="gray-btn" onclick="appendToInput('0')">0</button>
+    </div>
+    <div class="gray-btn-wrapper">
+      <button class="gray-btn" onclick="calculate()">=</button>
+    </div>
+    <div class="gray-btn-wrapper">
+      <button class="gray-btn" onclick="appendToInput('*')">*</button>
+    </div>
+  </div>
+  <div class="controls">
+</div>
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
